@@ -1,0 +1,17 @@
+.DS_Store
+.Python
+.venv
+env/
+build/
+.eggs/
+*.egg-info/
+*.egg
+/dist
+*.pyc
+*.iws
+*.zip
+workspace.xml
+tasks.xml
+/.idea
+.openai-api-key
+.earnings-call-api-key

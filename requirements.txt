@@ -1,0 +1,4 @@
+earningscall
+openai
+more-itertools
+requests

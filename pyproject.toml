@@ -1,0 +1,21 @@
+[project]
+name = "earnings-call-analysis"
+version = "0.0.1"
+description = "A collection of scripts demonstrating how to retrieve and analyze Earnings Call Transcripts."
+authors = [
+    {name = "EarningsCall", email = "dev@earningscall.biz"},
+]
+requires-python = ">= 3.8"
+dependencies = [
+    "earningscall>=0.0.13",
+    "more-itertools",
+    "openai",
+    "requests",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+#[tool.hatch.build.targets.wheel]
+#packages = ["earningscall"]
