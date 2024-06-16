@@ -47,14 +47,12 @@ model_costs = {
 
 class Agent:
 
-    def __init__(self):
+    def __init__(self, model_name):
         self.start_time = None
         self.end_time = None
         self.input_tokens = 0
         self.output_tokens = 0
-        # self.model_name = "claude-3-opus-20240229"
-        self.model_name = "claude-3-sonnet-20240229"
-        # self.model_name = "claude-3-haiku-20240307"
+        self.model_name = model_name
 
     def query(self, query: str):
         self.start_time = time()
@@ -112,6 +110,11 @@ if __name__ == "__main__":
     parser.add_argument('--debug',
                         action='store_true',
                         help='Enable debug logs')
+    parser.add_argument('--model',
+                        type=str,
+                        default="claude-3-sonnet-20240229",
+                        help='The Anthropic Model to use.  One of: '
+                             '[claude-3-haiku-20240307, claude-3-sonnet-20240229 or claude-3-opus-20240229]')
     parser.add_argument('--query',
                         default="Summarize MSFT's most recent earnings call.",
                         type=str,
@@ -122,7 +125,7 @@ if __name__ == "__main__":
         level = logging.DEBUG
     configure_sane_logging(level)
 
-    agent = Agent()
+    agent = Agent(args.model)
     chunks = [chunk for chunk in agent.query(query=args.query)]
     for chunk in chunks:
         log.info(dump_ai_json(chunk))
