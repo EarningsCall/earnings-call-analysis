@@ -1,4 +1,9 @@
-earningscall
-openai
+earningscall~=0.0.16
+openai~=1.30.5
 more-itertools
-requests
+requests~=2.32.2
+langchain~=0.2.5
+langchain-anthropic
+langchain-community
+langgraph~=0.0.69
+pydantic~=2.7.2

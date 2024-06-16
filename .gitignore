@@ -14,4 +14,6 @@ workspace.xml
 tasks.xml
 /.idea
 .openai-api-key
+.anthropic-api-key
+.langsmith-secret-key
 .earnings-call-api-key

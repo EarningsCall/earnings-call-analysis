@@ -1,6 +1,7 @@
 from earningscall import get_company
 from openai import OpenAI
 
+# Place your OpenAI API key in a file called .openai-api-key
 with open(".openai-api-key", "r") as fd:
     api_key = fd.read().strip()
 client = OpenAI(api_key=api_key)
