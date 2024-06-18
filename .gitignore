@@ -13,7 +13,9 @@ build/
 workspace.xml
 tasks.xml
 /.idea
+.ipynb_checkpoints
 .openai-api-key
 .anthropic-api-key
 .langsmith-secret-key
 .earnings-call-api-key
+sentiment-data.csv

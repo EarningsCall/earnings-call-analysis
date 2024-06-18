@@ -7,3 +7,5 @@ langchain-anthropic
 langchain-community
 langgraph~=0.0.69
 pydantic~=2.7.2
+textblob~=0.18.0.post0
+matplotlib

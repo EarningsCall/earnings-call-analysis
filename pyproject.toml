@@ -7,10 +7,17 @@ authors = [
 ]
 requires-python = ">= 3.8"
 dependencies = [
-    "earningscall>=0.0.13",
+    "earningscall>=0.0.16",
     "more-itertools",
     "openai",
     "requests",
+    "langchain>=0.2.5",
+    "langchain-anthropic",
+    "langchain-community",
+    "langgraph>=0.0.69",
+    "pydantic~=2.7.2",
+    "textblob~=0.18.0.post0",
+    "matplotlib"
 ]
 
 [build-system]
