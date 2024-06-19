@@ -18,3 +18,4 @@ tasks.xml
 .anthropic-api-key
 .langsmith-secret-key
 .earnings-call-api-key
+sentiment-data.csv

@@ -10,3 +10,11 @@ def verbose_timedelta(seconds):
                       for magnitude in ("days", "hours", "minutes", "seconds") if locals_[magnitude])
     return ", ".join(magnitudes_str)
 
+
+def get_earningscall_secret_api_key():
+    try:
+        with open(".earnings-call-api-key", "r") as fd:
+            return fd.read().strip()
+    except FileNotFoundError:
+        return None
+
